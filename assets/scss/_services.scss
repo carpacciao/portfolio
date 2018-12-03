@@ -1,0 +1,29 @@
+.services{
+    .container{
+        background-color: #fff;
+        .service-content{
+            border: 2px solid $secondary;
+            padding: 10px;
+            
+            .service-header{
+                .service-logo{
+                    background-color: $secondary;
+                    color: white;
+                    min-height: 40px;
+                    max-height: 40px;
+                    min-width: 40px;
+                    max-width: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 30px;
+                }
+                .service-title{
+                    font-family: $font;
+                    font-weight: bold;
+                    color: $primary;
+                }
+
+            }
+        }
+    }
+}
