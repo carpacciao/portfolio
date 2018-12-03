@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
+@import 'variables';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'header';
+
+h1{
+    font-family: 'Playfair display', sans-serif;
+    font-weight: 900;
+}
+
+.arrow-link{
+    color: $primary;
+    text-decoration: underline;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
+}
