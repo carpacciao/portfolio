@@ -1,0 +1,107 @@
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 100vh;
+    z-index: 1000;
+    border-bottom: 2px solid #d3d3d3;
+    .container{
+
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .brand{
+
+        }
+        .links{
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    display: inline-block;
+                    margin: 0 10px;
+                    a{
+                        text-decoration: none;
+                        font-family: font;
+                        font-weight: bold;
+                        color: black;
+                        position: relative;
+                        &::after{
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 3px;
+                            background-color: $primary;
+                            transition: width .3s;
+                            z-index: 100;
+                        }
+                        &:hover::after{
+                            width: 100%;
+                        }
+                    }
+                    &.active{
+                        a{
+                            color: $primary;
+                            &::after{
+                                width: 100%;
+                                z-index: 100;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .hamburger{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 990px){
+    nav{
+        .container{
+            .hamburger{
+                display: block;
+                font-size: 20px;
+            }
+            .links{
+                display: none;
+            }
+        }
+        &.active{
+            .container{
+                .links{
+                    display: block;
+                    position: absolute;
+                    bottom: -300px;
+                    left: 0;
+                    width: 100%;
+                    ul{
+                        li{
+                            margin: 0;
+                            padding: 0 20px;
+                            background-color: #e3e3e3;
+                            display: block;
+                            height: 60px;
+                            width: 100%;
+                            &:nth-child(even){
+                                background-color: #d6d5d5;
+
+                            }
+                            a{
+                                line-height: 60px;
+                                display: block;
+                                &::after{
+                                    position: absolute;
+                                    bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

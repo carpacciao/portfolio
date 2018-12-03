@@ -2,15 +2,73 @@
 @import 'variables';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'header';
+@import 'nav';
+@import 'about';
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f3f3f3;
+}
 
 h1{
-    font-family: 'Playfair display', sans-serif;
+    font-family: $font;
     font-weight: 900;
 }
 
 .arrow-link{
     color: $primary;
     text-decoration: underline;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: $font;
     font-weight: bold;
+}
+h2.title-spacer{
+    width: 100%;
+    background-color: $secondary;
+    color: white;
+    text-align: center;
+    font-family: $font;
+    font-weight: 900;
+    text-transform: uppercase;
+    height: 60px;
+    line-height: 60px;
+    &::after{
+        content: '';
+        display: block;
+        background-color: $secondary;
+        width: 15px;
+        height: 15px;
+        margin: 0 auto;
+        transform: translateY(-50%) rotate(45deg);
+    }
+}
+h3.title-spacer{
+    font-family: $font;
+    font-weight: bold;
+    &::after{
+        content: '';
+        display: block;
+        width: 45px;
+        height: 3px;
+        background-color: $primary;
+        margin: 0 auto;
+    }
+}
+img{
+    max-width: 100%;
+}
+.nav-pos{
+    height: 60px;
+    width: 100%;
+}
+.circle{
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    position: relative;
+}
+section{
+    padding-bottom: 1em;
 }
