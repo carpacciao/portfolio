@@ -5,10 +5,12 @@
 @import 'nav';
 @import 'about';
 @import 'services';
+@import 'portfolio';
+@import 'footer';
 
-html{
-    scroll-behavior: smooth;
-}
+// html{
+//     scroll-behavior: smooth;
+// }
 body{
     background-color: #f3f3f3;
 }
@@ -55,6 +57,12 @@ h3.title-spacer{
         background-color: $primary;
         margin: 0 auto;
     }
+}
+h4{
+    text-align: center;
+    font-family: $font;
+    color: $primary;
+    font-weight: bold;
 }
 img{
     max-width: 100%;

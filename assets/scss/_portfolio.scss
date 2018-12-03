@@ -1,0 +1,27 @@
+.portfolio{
+    .container{
+        .row{
+            .portfolio-content{
+                position: relative;
+                .portfolio-image:hover + .portfolio-text{
+                    transform: translate(-50%, -50%) rotate3d(0, 1, 0, 0deg);
+                }
+                .portfolio-text:hover{
+                    transform: translate(-50%, -50%) rotate3d(0, 1, 0, 0deg);
+                }
+                .portfolio-text{
+                    position: absolute;
+                    background-color: white;
+                    padding: 10px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate3d(0, 1, 0, 90deg);
+                    width: 90%;
+                    height: 90%;
+                    overflow: hidden;
+                    transition: transform .3s;
+                }
+            }
+        }
+    }
+}
