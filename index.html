@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/progressbar.js/dist/progressbar.js"></script>
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header id="home">
@@ -22,7 +25,7 @@
         </div>
         <div class="container d-flex align-items-center">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 header-content">
+                <div class="col-lg-4 col-md-6 col-sm-12 header-content" data-aos="fade-right">
                     <div>
                         <h1>Lucas Van Driessche</h1>
                         <p>Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit. Ab, debitis? Iure, commodi illum cum, accusamus magni adipisci aperiam odit culpa porro ea perferendis omnis quis quos. Quam harum repudiandae culpa? Libero officia architecto cumque delectus <strong>dignissimos</strong> culpa ducimus dolore. Voluptatum.</p>
@@ -82,9 +85,9 @@
         <div class="container bg-white p-4 mt-5">
             <div class="row align-items-center">
                 <div class="col-lg-5 col-sm-12">
-                    <img class="d-block mx-auto" src="./assets/img/user.jpg" alt="personal picture">
+                    <img class="d-block mx-auto" src="./assets/img/lucas.jpg" alt="personal picture" data-aos="flip-up">
                 </div>
-                <div class="col-lg-7 col-sm-12 mt-lg-0 mt-5 pl-sm-5 pr-sm-5">
+                <div class="col-lg-7 col-sm-12 mt-lg-0 mt-5 pl-sm-5 pr-sm-5" data-aos="fade-up">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quae assumenda iure commodi! Est laborum maxime optio dignissimos amet voluptate minima repellat pariatur. Incidunt rem nulla ipsum laborum veritatis eum.</p>
                     <p>Magnam sint distinctio, necessitatibus officia doloribus suscipit blanditiis excepturi enim velit corrupti assumenda quo ab adipisci accusantium libero, accusamus natus quia laudantium aliquam voluptas consequatur aut? Quisquam voluptas delectus laborum!</p>
                     <div class="text-center">
@@ -93,14 +96,14 @@
                     </div>
                 </div>
             </div>
-            <h3 class="title-spacer mt-5 text-center">Skills</h3>
+            <h3 class="title-spacer mt-5 text-center" data-aos="fade-left">Skills</h3>
             <div class="skills-filters text-center mt-5">
                 <a href="#" class="btn btn-outline-primary btn-sm mr-4 active">All</a>
                 <a href="#" class="btn btn-outline-primary btn-sm ml-4 mr-4">Design</a>
                 <a href="#" class="btn btn-outline-primary btn-sm ml-4">Languages</a>
             </div>
             <div class="row mt-5">
-                <div class="progressCircle col-lg-4 col-md-6 col-sm-12" data-c mt-md-0ategory3"language">
+                <div class="progressCircle col-lg-4 col-md-6 col-sm-12 mt-md-0" data-category="language" data-aos="zoom-in">
                     <div class="wrapper d-flex align-items-center">
                         <div class="circle" id="html"></div>
                         <div class="circle-text ml-2">
@@ -109,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="progressCircle col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3" data-category="language">
+                <div class="progressCircle col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3" data-category="language" data-aos="zoom-in">
                     <div class="wrapper d-flex align-items-center">
                         <div class="circle" id="javascript"></div>
                         <div class="circle-text ml-2">
@@ -118,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="progressCircle col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3" data-category="language">
+                <div class="progressCircle col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3" data-category="language" data-aos="zoom-in">
                     <div class="wrapper d-flex align-items-center">
                         <div class="circle" id="css"></div>
                         <div class="circle-text ml-2">
@@ -127,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="progressCircle col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3" data-category="design">
+                <div class="progressCircle col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3" data-category="design" data-aos="zoom-in">
                     <div class="wrapper d-flex align-items-center">
                         <div class="circle" id="photoshop"></div>
                         <div class="circle-text ml-2">
@@ -136,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="progressCircle col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3" data-category="design">
+                <div class="progressCircle col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3" data-category="design" data-aos="zoom-in">
                     <div class="wrapper d-flex align-items-center">
                         <div class="circle" id="illustrator"></div>
                         <div class="circle-text ml-2">
@@ -145,7 +148,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="progressCircle col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3" data-category="design">
+                <div class="progressCircle col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3" data-category="design" data-aos="zoom-in">
                     <div class="wrapper d-flex align-items-center">
                         <div class="circle" id="xd"></div>
                         <div class="circle-text ml-2">
@@ -154,7 +157,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="progressCircle col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3" data-category="design">
+                <div class="progressCircle col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3" data-category="design" data-aos="zoom-in">
                     <div class="wrapper d-flex align-items-center">
                         <div class="circle" id="indesign"></div>
                         <div class="circle-text ml-2">
@@ -163,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="progressCircle col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3" data-category="design">
+                <div class="progressCircle col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3" data-category="design" data-aos="zoom-in">
                     <div class="wrapper d-flex align-items-center">
                         <div class="circle" id="trello"></div>
                         <div class="circle-text ml-2">
@@ -181,7 +184,7 @@
         <div class="container mt-5 p-3">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0">
-                    <div class="service-content">
+                    <div class="service-content" data-aos="flip-right">
                         <div class="service-header d-flex">
                             <div class="service-logo"><i class="fas fa-paint-brush"></i></div>
                             <h5 class="service-title ml-3">Web Design</h5>
@@ -191,7 +194,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-3">
-                    <div class="service-content">
+                    <div class="service-content" data-aos="flip-right">
                         <div class="service-header d-flex">
                             <div class="service-logo"><i class="fas fa-code"></i></div>
                             <h5 class="service-title ml-3">Front-end</h5>
@@ -201,7 +204,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-3">
-                    <div class="service-content">
+                    <div class="service-content" data-aos="flip-left">
                         <div class="service-header d-flex">
                             <div class="service-logo"><i class="fas fa-mobile-alt"></i></div>
                             <h5 class="service-title ml-3">Responsive</h5>
@@ -211,7 +214,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-3">
-                    <div class="service-content">
+                    <div class="service-content" data-aos="flip-left">
                         <div class="service-header d-flex">
                             <div class="service-logo"><i class="fas fa-server"></i></div>
                             <h5 class="service-title ml-3">Back-end</h5>
@@ -233,9 +236,9 @@
                 <a href="#" class="btn btn-outline-primary btn-sm ml-4">Web</a>
             </div>
             <div class="row mt-5">
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-content" data-category="design">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-content" data-category="design" data-aos="zoom-in">
                     <div class="portfolio-image">
-                        <img src="./assets/img/1.jpeg" alt="">
+                        <img src="./assets/img/1.jpg" alt="">
                     </div>
                     <div class="portfolio-text">
                         <h4>Title Project</h4>
@@ -243,9 +246,9 @@
                         <div class="text-center"><a href="#" class="btn btn-primary btn-sm">See</a></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-content" data-category="web">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-content" data-category="web" data-aos="zoom-in">
                     <div class="portfolio-image">
-                        <img src="./assets/img/2.jpeg" alt="">
+                        <img src="./assets/img/4.jpg" alt="">
                     </div>
                     <div class="portfolio-text">
                         <h4>Title Project</h4>
@@ -253,9 +256,9 @@
                         <div class="text-center"><a href="#" class="btn btn-primary btn-sm">See</a></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-content" data-category="design">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-content" data-category="design" data-aos="zoom-in">
                     <div class="portfolio-image">
-                        <img src="./assets/img/3.jpeg" alt="">
+                        <img src="./assets/img/2.jpg" alt="">
                     </div>
                     <div class="portfolio-text">
                         <h4>Title Project</h4>
@@ -263,9 +266,9 @@
                         <div class="text-center"><a href="#" class="btn btn-primary btn-sm">See</a></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-content" data-category="web">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-content" data-category="web" data-aos="zoom-in">
                     <div class="portfolio-image">
-                        <img src="./assets/img/4.jpeg" alt="">
+                        <img src="./assets/img/5.jpg" alt="">
                     </div>
                     <div class="portfolio-text">
                         <h4>Title Project</h4>
@@ -273,9 +276,9 @@
                         <div class="text-center"><a href="#" class="btn btn-primary btn-sm">See</a></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-content" data-category="design">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-content" data-category="design" data-aos="zoom-in">
                     <div class="portfolio-image">
-                        <img src="./assets/img/1.jpeg" alt="">
+                        <img src="./assets/img/3.jpg" alt="">
                     </div>
                     <div class="portfolio-text">
                         <h4>Title Project</h4>
@@ -283,9 +286,9 @@
                         <div class="text-center"><a href="#" class="btn btn-primary btn-sm">See</a></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-content" data-category="web">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-content" data-category="web" data-aos="zoom-in">
                     <div class="portfolio-image">
-                        <img src="./assets/img/2.jpeg" alt="">
+                        <img src="./assets/img/6.jpg" alt="">
                     </div>
                     <div class="portfolio-text">
                         <h4>Title Project</h4>
@@ -300,7 +303,7 @@
     <section class="contact">
         <div class="container">
             <div class="row align-items-center">
-                <div class="footer-content col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-content col-lg-6 col-md-6 col-sm-12" data-aos="fade-right">
                     <h3>Lucas Van Driessche</h3>
                     <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente tempore perferendis repellat quas ab, impedit quaerat laudantium. Veniam, perferendis voluptatem ullam odit esse assumenda beatae rem minus cum quos soluta!</p>
                     <ul>
@@ -309,7 +312,7 @@
                         <li><i class="fas fa-map-marker-alt"></i><span> Belgique, Bruxelles, 1070 ANDERLECHT</span></li>
                     </ul>
                 </div>
-                <div class="footer-contact col-lg-6 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-4">
+                <div class="footer-contact col-lg-6 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-4" data-aos="fade-right">
                     <div class="row">
                         <div class="col-6">
                             <input class="form-control form-control-sm" type="text" placeholder="Name">
@@ -337,5 +340,8 @@
 
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/circle.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

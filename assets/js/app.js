@@ -19,7 +19,7 @@
                     // Only prevent default if animation is actually gonna happen
                     event.preventDefault();
                     $('html, body').animate({
-                        scrollTop: target.offset().top
+                        scrollTop: target.offset().top + 10
                     }, 1000, function () {
                         // Callback after animation
                         // Must change focus!
@@ -45,7 +45,7 @@
     let bg = document.querySelector('.header-carousel');
     
     //inserer images dans le tableau
-    let images = ['assets/img/1.jpeg', 'assets/img/2.jpeg', 'assets/img/3.jpeg', 'assets/img/4.jpeg'];
+    let images = ['assets/img/1.jpg', 'assets/img/2.jpg', 'assets/img/3.jpg', 'assets/img/4.jpg'];
     let count = 0;
     
     function right(){
@@ -77,6 +77,8 @@
 (() => {
     let nav = document.querySelector('nav');
     let navO = nav.offsetTop;
+    let pos = document.querySelectorAll('.nav-pos');
+    let li = document.querySelectorAll('nav ul li');
     
     window.addEventListener('scroll', (e) => {
         if(window.scrollY >= navO){
@@ -86,6 +88,46 @@
             nav.style.position = "absolute";
             nav.style.top = "100vh";
         }
+
+        //nav active
+        if(window.scrollY >= 0 && window.scrollY < pos[0].offsetTop - 60){
+            li[0].classList.add('active')
+            li[1].classList.remove('active')
+            li[2].classList.remove('active')
+            li[3].classList.remove('active')
+            li[4].classList.remove('active')
+        } else if (window.scrollY > pos[0].offsetTop && window.scrollY < pos[1].offsetTop - 60) {
+            li[1].classList.add('active')
+            li[0].classList.remove('active')
+            li[2].classList.remove('active')
+            li[3].classList.remove('active')
+            li[4].classList.remove('active')
+        } else if (window.scrollY > pos[1].offsetTop && window.scrollY < pos[2].offsetTop - 60) {
+            li[2].classList.add('active')
+            li[1].classList.remove('active')
+            li[0].classList.remove('active')
+            li[3].classList.remove('active')
+            li[4].classList.remove('active')
+        } else if (window.scrollY > pos[2].offsetTop && window.scrollY < pos[3].offsetTop - 60) {
+            li[3].classList.add('active')
+            li[1].classList.remove('active')
+            li[2].classList.remove('active')
+            li[0].classList.remove('active')
+            li[4].classList.remove('active')
+        } else if (window.scrollY > pos[2].offsetTop && window.scrollY < pos[3].offsetTop - 60) {
+            li[4].classList.add('active')
+            li[1].classList.remove('active')
+            li[2].classList.remove('active')
+            li[3].classList.remove('active')
+            li[0].classList.remove('active')
+        } else if (window.scrollY >= pos[3].offsetTop) {
+             li[0].classList.add('active')
+             li[1].classList.remove('active')
+             li[2].classList.remove('active')
+             li[3].classList.remove('active')
+             li[4].classList.remove('active')
+        }
+
     });
     window.addEventListener('resize', () => {
         navO = document.querySelector('header').offsetHeight;
@@ -106,6 +148,12 @@
 
     
 })();
+
+
+
+
+
+
 
 //filter skills
 
